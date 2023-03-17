@@ -6,3 +6,41 @@
  * Nezapomente pridat strucne hromadne komentare pro pravidla jednotlivych sekci
  * a pro netrivialni useky kodu.
  */
+
+* {
+    font-family: Poppins, Times, serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 0.4rem;
+}
+
+ /* H3 JE IMPLICITNI */
+
+body {
+    min-width: 768px;
+    max-width: 1200px;
+    /* margin: 0px 10px; */
+    margin: auto;
+}
+
+header {
+    min-height: 400px;
+}
+
+#header-menu {
+    max-width: 1000px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo .nav {
+    height: 80px;
+}
