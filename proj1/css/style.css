@@ -38,12 +38,15 @@ body {
     display: none;
 }
 
+/*********************** ZACATEK HEADERU ***********************/
+
 header {
     min-height: 400px;
     background-image: url(/proj1/img/header.jpg);
     opacity: 0.8;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     /* MUSIM ZOBRAZIT CELY OBRAZEK */
 }
 
@@ -52,16 +55,18 @@ header {
     margin: 10px auto 0px auto;
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
     vertical-align: top;
 }
 
+/* TODO PREHODIT KONTAKTY */
 .contacts {
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
     padding-bottom: 5px;
+    display: flex;
 }
 
 .phone > i {
@@ -76,11 +81,14 @@ header {
     color: #CC3636;
 }
 
+/* TODO PREHODIT STRANKY */
 .networks {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    /* display: flex; */
+
 }
 
 .networks > * {
@@ -97,6 +105,7 @@ header {
     border-top: 1px solid #e8e7e7;
 }
 
+/* TODO PREHODIT POLOZKY */
 nav {
     grid-column-start: 2;
     grid-column-end: 2;
@@ -138,3 +147,22 @@ li > ul {
     /* SEM PRIJDE DROPDOWN MENU */
     display: none;
 }
+
+#header-form {
+    position: absolute;
+    left: 20%;
+    bottom: -20px;
+    font-size: 14px;
+    padding: 15px;
+    background-color: white;
+    border-bottom: 1px solid #CC3636;
+    /* box-shadow: 5px 5px 5px 5px white; */
+}
+
+#header-form > * {
+    border-radius: 4px;
+}
+
+/*********************** ZACATEK MAINU ***********************/
+
+/*********************** ZACATEK FOOTERU ***********************/
