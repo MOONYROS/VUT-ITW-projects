@@ -55,6 +55,7 @@ header {
     /* opacity: 0.8; */
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     /* MUSIM ZOBRAZIT CELY OBRAZEK */
 }
@@ -161,7 +162,7 @@ nav > ul {
     justify-content: flex-end;
 }
 
-li {
+nav li {
     float: right;
     color: #363535;
     margin-right: 20px;
@@ -232,17 +233,42 @@ section > * {
 /*************** ABOUT ***************/
 
 #about {
-    background-image: url(../img/meth.svg);
+    /* background-image: url(../img/meth.svg);
     background-repeat: no-repeat;
     background-position: 90%;
-    background-size: 50%;
+    background-size: 50%; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 40% 55%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-    #about > img {
-        width: 40%;
-        padding: 20px;
-        opacity: 0.8;
-    }
+#about > .heading {
+    grid-area: 2/3/2/3;
+    /* grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3; */
+}
+
+#about > p {
+    grid-area: 3/3/3/3;
+    /* grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3; */
+}
+
+#about > img {
+    /* width: 40%; */
+    padding: 20px;
+    opacity: 0.8;
+    grid-area: 1/2/4/2;
+    /* grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 2; */
+}
 
 .heading > span {
     font-family: Bebas Neue, Times, serif;
@@ -284,6 +310,7 @@ section > * {
     height: 300px;
     object-fit: cover;
     max-width: 100%;
+    opacity: 0.8;
 }
 #services > .section-content > .section-item {
     flex-basis: 250px;
@@ -299,6 +326,42 @@ section > * {
     background-size: 50%;
 }
 
+#tours .tour-stars::before {
+    font: var(--fa-font-regular);
+    content: "\f005";
+    color: #CC3636;
+    margin-right: 4px;
+}
+
+#tours .tour-stars {
+    padding-right: 8px;
+    border-right: 1px solid black;
+    margin-left: 3px;
+}
+
+#tours .tour-duration {
+    padding-right: 8px;
+    border-right: 1px solid black;
+    margin-left: 3px;
+}
+
+#tours .tour-price {
+    margin-left: 3px;
+}
+
+#tours .tour-duration::before {
+    font: var(--fa-font-regular);
+    content: "\f073";
+    color: #CC3636;
+    margin-right: 4px;
+}
+
+#tours .tour-price::before {
+    font: var(--fa-font-brands);
+    content: "\f15a";
+    color: #CC3636;
+    margin-right: 4px;
+}
 
 #tours .section-item {
     border-bottom: 2px solid #e8e7e7;
@@ -309,14 +372,96 @@ section > * {
     width: 40%;
     margin: 20px;
     float: right;
-    box-shadow: 10px 10px 10px 10px red;
+    opacity: 0.8;
 }
 
-#tours img:nth-child(1) {
-    box-shadow: 10px 10px 10px 10px blue;
+#tour1 h3 {
+    text-align: right;
+}
+
+#tour1 .tour-props {
+    text-align: right;
+}
+
+#tour2 > img {
+    float: left;
 }
 
 /*************** PRICE ***************/
+
+#price > .section-content {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    box-shadow: 0 0 30px 30px white inset
+}
+
+#price > .section-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../img/huel.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    opacity: 0.6;
+    z-index: -1;
+}
+
+#price > .section-content > * {
+    position: relative;
+    z-index: 1;
+}
+
+#price .section-item {
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 10px white;
+    position: absolute;
+}
+
+#price .section-item h3 {
+    margin-top:  0px;
+}
+
+/* ZATIM NEBUDU UKAZOVAT */
+#price .section-item span {
+    display: none;
+}
+
+#price ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#price ul li {
+    background-image: url("../img/crystal.svg");
+    background-size: 20px 20px; /* adjust the size to your preference */
+    background-repeat: no-repeat;
+    padding-left: 30px; /* adjust the padding to position the text */
+    line-height: 1.5; /* adjust the line-height for better alignment */
+}
+
+#price .section-item:nth-child(1) {
+    left: 50%;
+    top: 50px;
+}
+
+#price .section-item:nth-child(2) {
+    left: 65%;
+    top: 200px;
+}
+
+#price .section-item:nth-child(3) {
+    left: 75%;
+    top: 400px;
+}
 
 /*************** CLIENTS ***************/
 
