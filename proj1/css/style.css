@@ -27,10 +27,8 @@ a {
     text-decoration: none;
 }
 
-/* H3 JE IMPLICITNI */
-
 body {
-    /* min-width: 768px; */
+    min-width: 768px;
     max-width: 1200px;
     margin: auto;
 }
@@ -51,7 +49,7 @@ section {
 header {
     margin-top: 50px;
     min-height: 400px;
-    background-image: url(../img/header.jpg);
+    background-image: url("../img/header.jpg");
     /* opacity: 0.8; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,7 +70,6 @@ header {
     box-shadow: 0px 10px 10px 10px white;
 }
 
-/* TODO PREHODIT KONTAKTY */
 .contacts {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -96,7 +93,6 @@ header {
     color: #CC3636;
 }
 
-/* TODO PREHODIT STRANKY */
 .networks {
     grid-column-start: 2;
     grid-column-end: 2;
@@ -233,10 +229,6 @@ section > * {
 /*************** ABOUT ***************/
 
 #about {
-    /* background-image: url(../img/meth.svg);
-    background-repeat: no-repeat;
-    background-position: 90%;
-    background-size: 50%; */
     width: 100%;
     display: grid;
     grid-template-columns: 5% 40% 55%;
@@ -245,18 +237,10 @@ section > * {
 
 #about > .heading {
     grid-area: 2/3/2/3;
-    /* grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 3;
-    grid-column-end: 3; */
 }
 
 #about > p {
     grid-area: 3/3/3/3;
-    /* grid-row-start: 3;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 3; */
 }
 
 #about > img {
@@ -264,10 +248,6 @@ section > * {
     padding: 20px;
     opacity: 0.8;
     grid-area: 1/2/4/2;
-    /* grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 2; */
 }
 
 .heading > span {
@@ -321,7 +301,7 @@ section > * {
 /*************** TOURS ***************/
 
 #tours {
-    background-image: url(../img/crystal-ship.svg);
+    background-image: url("../img/crystal-ship.svg");
     background-repeat: no-repeat;
     background-size: 50%;
 }
@@ -442,10 +422,10 @@ section > * {
 
 #price ul li {
     background-image: url("../img/crystal.svg");
-    background-size: 20px 20px; /* adjust the size to your preference */
+    background-size: 20px 20px;
     background-repeat: no-repeat;
-    padding-left: 30px; /* adjust the padding to position the text */
-    line-height: 1.5; /* adjust the line-height for better alignment */
+    padding-left: 30px;
+    line-height: 1.5;
 }
 
 #price .section-item:nth-child(1) {
@@ -464,6 +444,38 @@ section > * {
 }
 
 /*************** CLIENTS ***************/
+
+#clients img {
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+    box-shadow: 0 0 10px 4px #888888;
+}
+
+#clients blockquote {
+    display: inline-block;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+#clients .section-item:nth-child(odd) img {
+    border-radius: 50% 25%;
+}
+
+#clients .section-item:nth-child(even) img {
+    border-radius: 25% 50%;
+}
+
+#clients .section-item:nth-child(odd) blockquote {
+    background-color: #e8e7e7;
+    border-radius: 25% 55%;
+}
+
+#clients .section-item:nth-child(even) blockquote {
+    background-color: #e8e7e7;
+    border-radius: 55% 25%;
+}
 
 /***************************************************************/
 /*********************** ZACATEK FOOTERU ***********************/
