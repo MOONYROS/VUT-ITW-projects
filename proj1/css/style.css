@@ -55,7 +55,7 @@ header {
     background-size: cover;
     background-position: center;
     position: relative;
-    /* MUSIM ZOBRAZIT CELY OBRAZEK */
+    box-shadow: 0 0 5px 5px white inset;
 }
 
 #header-menu {
@@ -68,6 +68,28 @@ header {
     grid-template-columns: 2fr 3fr;
     vertical-align: top;
     box-shadow: 0px 10px 10px 10px white;
+}
+
+#header-title span:first-child{
+    position: absolute;
+    font-size: 52px;
+    color: white;
+    text-shadow: 0 0 5px white;
+    top: 50%;
+    left: 65%;
+}
+
+#header-title span:first-child::first-letter {
+    text-transform: capitalize;
+}
+
+#header-title span:last-child{
+    position: absolute;
+    font-size: 24px;
+    color: #CC3636;
+    top: 70%;
+    left: 70%;
+    text-shadow: 0 0 5px #CC3636;
 }
 
 .contacts {
@@ -178,7 +200,7 @@ nav li {
     width: 100%;
 }
 
-form {
+header form {
     position: relative;
     font-size: 14px;
     padding: 15px;
@@ -193,30 +215,28 @@ form {
     min-width: 600px;
 }
 
+header form > * {
+    border-radius: 4px;
+    padding: 10px;
+    width: 150px;
+    border: 1px solid #e8e7e7;
+    margin: 5px;
+    min-width:125px;
+}
 
+header form > select {
+    background-color: white;
+}
 
-    form > * {
-        border-radius: 4px;
-        padding: 10px;
-        width: 150px;
-        border: 1px solid #e8e7e7;
-        /**/
-        margin: 5px;
-        min-width:125px;
-    }
+header form > input[type=submit] {
+    background-color: #CC3636;
+    color: white;
+}
 
-    form > select {
-        background-color: white;
-    }
+header form > input[type=date] {
+    min-width: 150px;
+}
 
-    form > input[type=submit] {
-        background-color: #CC3636;
-        color: white;
-    }
-
-    form > input[type=date] {
-        min-width: 150px;
-    }
 /*************************************************************/
 /*********************** ZACATEK MAINU ***********************/
 /*************************************************************/
@@ -528,6 +548,8 @@ section > * {
 footer {
     background-color: #363535;
     color: white;
+    font-size: 14px;
+    padding-top: 20px;
 }
 
 footer div:first-child {
@@ -536,7 +558,7 @@ footer div:first-child {
 }
 
 footer div:first-child > section > * {
-    min-width: 250px;
+    min-width: 300px;
 }
 
 footer h2 {
@@ -548,6 +570,7 @@ footer h2 {
 footer h3 {
     letter-spacing: 0.2rem;
     font-family: Bebas Neue, Times, serif;
+    padding: 15px 0;
 }
 
 footer #summary {
@@ -558,6 +581,7 @@ footer #summary {
 footer #summary p {
     break-inside: avoid-column;
     width: 50px;
+    font-size: 14px;
 }
 
 footer #links {
@@ -588,4 +612,60 @@ footer .contacts i {
     color: #CC3636;
     padding-left: 0;
     margin-right: 5px;
+}
+
+#links ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#links li {
+    margin-top: 10px;
+}
+
+#links li::before {
+    content: ">";
+    margin-right: 5px;
+    color: #CC3636;
+}
+
+footer .networks {
+    display: flex;
+    justify-content: left;
+}
+
+footer .networks > * {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid #CC3636;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+footer #license {
+    border-top: 1px solid white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer #license span:last-child {
+    text-align: right;
+}
+
+footer form input:first-child {
+    width: 60%;
+    height: 30px;
+}
+
+footer form input:last-child {
+    width: 20%;
+    border-radius: 0;
+    height: 35px;
+    margin-left: -5px;
+    background-color: #CC3636;
+    color: white;
+    border: 0px;
+    font-size: 12px;
 }
