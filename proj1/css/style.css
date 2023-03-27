@@ -27,11 +27,12 @@ a {
     text-decoration: none;
 }
 
-body {
+main > * {
     min-width: 768px;
     max-width: 1200px;
     margin: auto;
 }
+
 
 section {
     padding-top: 60px;
@@ -47,7 +48,8 @@ section {
 /*************************************************************/
 
 header {
-    margin-top: 50px;
+    margin-top: 70px;
+    height: 600px;
     min-height: 400px;
     background-image: url("../img/header.jpg");
     /* opacity: 0.8; */
@@ -71,12 +73,13 @@ header {
 }
 
 #header-title span:first-child{
+    white-space: nowrap;
     position: absolute;
     font-size: 52px;
     color: white;
     text-shadow: 0 0 5px white;
-    top: 50%;
-    left: 65%;
+    top: 60%;
+    left: 72%;
 }
 
 #header-title span:first-child::first-letter {
@@ -84,11 +87,12 @@ header {
 }
 
 #header-title span:last-child{
+    white-space: nowrap;
     position: absolute;
     font-size: 24px;
     color: #CC3636;
-    top: 70%;
-    left: 70%;
+    top: 75%;
+    left: 75%;
     text-shadow: 0 0 5px #CC3636;
 }
 
@@ -138,14 +142,21 @@ header {
     border-top: 1px solid #e8e7e7;
 }
 
-    .logo::first-letter {
-        color: #CC3636;
-    }
+.logo::first-letter {
+    color: #CC3636;
+}
 
-    .logo:hover::after {
-        content: "CRYSTAL PALACE";
-        color: #CC3636;
-    }
+.logo:hover::after {
+    content: "CRYSTAL PALACE";
+    color: #CC3636;
+    font-family: Bebas Neue;
+    font-size: 32px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    padding-right: 50px;
+    background-color: white;
+}
 
 nav {
     grid-column-start: 2;
@@ -552,6 +563,12 @@ footer {
     padding-top: 20px;
 }
 
+footer > * {
+    min-width: 768px;
+    max-width: 1200px;
+    margin: auto;
+}
+
 footer div:first-child {
     display: flex;
     justify-content: space-between;
@@ -668,4 +685,8 @@ footer form input:last-child {
     color: white;
     border: 0px;
     font-size: 12px;
+}
+
+#jesse {
+    display: none;
 }
