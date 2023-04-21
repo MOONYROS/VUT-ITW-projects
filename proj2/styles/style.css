@@ -306,3 +306,55 @@ h3 {
 }
 
 /* TADY BUDE IMAGE CAROUSEL (snad) */
+
+/********************************************************/
+/*********************** CONTACT ************************/
+/********************************************************/
+
+#Contact {
+    transition: all 0.3s ease;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+#Contact:hover {
+    border: 2px solid #24C5C4;
+    background-color: #393D47;
+}
+
+#Contact h2 {
+    margin-bottom: 40px;
+}
+
+#Contact:hover h2, #Contact:hover span {
+    transition: all 0.3s ease;
+    color: #F0C808;
+}
+
+#Contact a {
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+#Contact:hover #link {
+    transition: all 0.3s ease;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: #1DA1A0;
+}
+
+#Contact p {
+    padding: 30px;
+}
+
+#Contact #Download {
+    padding: 10px;
+    background-color: #1DA1A0;
+    border-radius: 7px;
+}
+
+#Contact #Download:hover {
+    transition: all 0.2s ease;
+    background-color: #167A7A;
+}
