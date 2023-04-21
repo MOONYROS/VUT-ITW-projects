@@ -358,3 +358,54 @@ h3 {
     transition: all 0.2s ease;
     background-color: #167A7A;
 }
+
+#ContactIcons {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#ContactIcons img {
+    transition: all 0.1s ease;
+    max-width: 70px;
+    min-width: 60px;
+}
+
+#ContactIcons img:hover {
+    transition: all 0.15s ease;
+    filter: invert(1);
+}
+
+/********************************************************/
+/*********************** FOOTER ************************/
+/********************************************************/
+
+footer {
+    margin-top: 60px;
+    transition: all 0.3s ease;
+    background-color: #393D47;
+    text-align: center;
+}
+
+footer img {
+    transition: all 0.2s ease;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 100px;
+}
+
+footer img:hover {
+    transition: all 0.2s ease;
+    width: 115px;
+}
+
+footer p {
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+}
+
+footer:hover span {
+    transition: all 0.3s ease;
+    color: #F0C808;
+}
