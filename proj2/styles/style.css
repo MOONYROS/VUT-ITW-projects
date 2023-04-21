@@ -11,6 +11,11 @@ body {
     font-size: 20px;
 }
 
+h2 {
+    font-family: Kanit, Inter, Arial;
+    font-size: 32;
+}
+
 /******************************************************/
 /******************** HEADER **************************/
 /******************************************************/
@@ -97,6 +102,48 @@ header a {
     border-radius: 100%;
 }
 
+/*************************************************************/
+/*********************** GENERAL INFO ************************/
+/*************************************************************/
+
+#GeneralInfo {
+    transition: all 0.3s ease;
+    margin: 100px 0px;
+    padding: 100px 0px;
+    background-color: #24C5C4;
+}
+
+
+#GeneralInfo:hover {
+    background-color: #1DA1A0;
+}
+/* 7B94FF */
+
+#GeneralInfo div {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#GeneralInfo span {
+    transition: all 0.3s ease;
+}
+
+#GeneralInfo:hover span {
+    transition: all 0.3s ease;
+    color: #F0C808;
+}
+
 /******************************************************/
-/******************** HEADER **************************/
+/*********************** ABOUT ************************/
 /******************************************************/
+
+#container {
+    width: 60%;
+    margin: auto;
+}
+
+#About img {
+    width: 20%;
+    color: #F2F3F4;
+}
