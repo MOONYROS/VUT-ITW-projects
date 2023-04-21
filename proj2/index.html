@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ondřej Lukášek | Beginner programmer</title>
     <link rel="icon" href="images/MOONY_500x500.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> <!-- Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">  <!-- Kanit -->
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <!-- <a href="http://www.freepik.com">Designed by Freepik</a> ASI BYCH TO MEL POUZIT -->
     <header>
         <nav>
             <ul>
-                <!-- MOZNA BUDE POTREBA PROHODIT 'a' A 'li' -->
-                <li><a href="index.html"><img src="images/MOONY_500x500.png" alt="Main logo"></a></li>
+                <li><a href="index.html"><img src="images/MOONY_500x500.png" alt="Main logo" id="navPic"></a></li>
+                <!-- <li><a href="index.html">Start</a></li> -->
                 <li><a href="#About">About</a></li>
-                <li><a href="#Work">Work</a></li> <!-- Will be split to subsections -->
+                <li><a href="#Work">Work</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
-        <h1>Hello, stranger!</h1>
-        <p>I'm a beginning programmer and IT student</p>
-        <img src="/images/programming.jpg" alt="Picture with computer and apps"> <!-- BUDE POTREBA TO PREBARVIT (asi) -->
+        <div id="headerDiv">
+            <h1><span>Hello</span>, stranger!</h1>
+            <p>I'm a beginning programmer and IT student</p>
+            <img src="/images/MyPhoto.png" alt="Picture of me" id="profilePic"> <!-- BUDE POTREBA TO PREBARVIT (asi) NEBO VYMENIT -->
+        </div>
     </header>
 
     <section id="GeneralInfo">
