@@ -1,0 +1,102 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, Arial, Helvetica;
+    color: #F2F3F4;
+    /* 2E323A */
+    background-color: #313338; 
+    margin: 0px;
+    font-size: 20px;
+}
+
+/******************************************************/
+/******************** HEADER **************************/
+/******************************************************/
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+
+header ul {
+    padding: 0px;
+    margin: auto;
+    width: 60%;
+    list-style: none;
+    display: flex;
+}
+
+header nav {
+    background-color: #393D47;
+}
+
+header #navPic {
+    width: 38px;
+}
+
+header li {
+    transition: all 0.3s ease;
+    flex-grow: 1;
+    font-size: 28px;
+    padding: 10px;
+    /* padding-left: 20px; */
+}
+
+header li:hover {
+    transition: all 0.3s ease;
+    color: #24C5C4;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADERDIV */
+
+#headerDiv {
+    transition: all 0.3s ease;
+    margin: auto;
+    margin-top: 60px;
+    width: 60%;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+#headerDiv:hover {
+    transition: all 0.3s ease;
+    border: 2px solid #24C5C4;
+    background-color: #393D47;
+}
+
+#headerDiv span {
+    transition: all 0.3s ease;
+}
+
+#headerDiv:hover span {
+    transition: all 0.3s ease;
+    color: #F0C808;
+}
+/* F0C808 #6A7FDB*/
+#headerDiv h1 {
+    font-family: Kanit, Inter, Arial;
+    font-size: 56px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+#profilePic {
+    margin-top: 70px;
+    margin-bottom: 150px;
+    width: 30%;
+    max-width: 250px;
+    min-width: 200px;
+    border-radius: 100%;
+}
+
+/******************************************************/
+/******************** HEADER **************************/
+/******************************************************/
