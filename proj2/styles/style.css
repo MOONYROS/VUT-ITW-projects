@@ -244,3 +244,65 @@ h3 {
 /*****************************************************/
 /*********************** WORK ************************/
 /*****************************************************/
+
+#Work {
+    transition: all 0.3s ease;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+#Work:hover {
+    transition: all 0.3s ease;
+    border: 2px solid #24C5C4;
+    background-color: #393D47;
+}
+
+#Work h2 {
+    display: inline-block;
+    position: relative;
+}
+
+#Work h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F0C808;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+#Work:hover h2::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#Work p {
+    transition: all 0.3s ease;
+    padding: 0px 30px;
+}
+
+#Work:hover span {
+    transition: all 0.3s ease;
+    color: #F0C808;
+}
+
+#Work a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+#Work:hover a {
+    transition: all 0.3s ease;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: #1DA1A0;
+}
+
+/* TADY BUDE IMAGE CAROUSEL (snad) */
