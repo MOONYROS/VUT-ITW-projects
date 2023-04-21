@@ -16,6 +16,13 @@ h2 {
     font-size: 32;
 }
 
+h3 {
+    font-family: Kanit, Inter, Arial;
+    margin-bottom: 0;
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
 /******************************************************/
 /******************** HEADER **************************/
 /******************************************************/
@@ -125,7 +132,7 @@ header a {
     text-align: center;
 }
 
-#GeneralInfo span {
+span {
     transition: all 0.3s ease;
 }
 
@@ -141,9 +148,59 @@ header a {
 #container {
     width: 60%;
     margin: auto;
+    text-align: center;
 }
 
+.ImageDiv {
+    height: 100px;
+}
+
+/* TOHLE JE TEMPORARY, ASI MUSIM ZMENIT IKONKY, NEVYPADA TO DOBRE */
 #About img {
-    width: 20%;
-    color: #F2F3F4;
+    width: 100px;
+}
+
+#About h2 {
+    transition: all 0.3s ease;
+    margin-bottom: 65px;
+}
+
+#About:hover h2 {
+    transition: all 0.3s ease;
+    color: #F0C808;
+    font-size: 38px;
+}
+
+#MyHistory {
+    display: flex;
+    gap: 10%;
+}
+
+.School {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.School p {
+    padding: 30px;
+}
+
+.School:hover {
+    /* box-sizing: border-box; */
+    transition: all 0.3s ease;
+    border: 2px solid #24C5C4;
+    background-color: #393D47;
+}
+
+.School:hover h3 {
+    transition: all 0.3s ease;
+    color: #F0C808;
+    font-size: 32px;
+}
+
+.School:hover span {
+    transition: all 0.3s ease;
+    color: #F0C808;
 }
