@@ -44,13 +44,11 @@ document.querySelectorAll('footer a[href^="#"]').forEach(anchor => {
     });
 });
 
-// POKUSY
-
 // Set the options for the observer
 const options = {
     root: null, // Use the document viewport as the container
     rootMargin: '0px', // No margin
-    threshold: 0.99, // The element is considered in viewport when 80% of it is visible
+    threshold: 0.5, // The element is considered in viewport when 80% of it is visible
 };
 
 // Create a new Intersection Observer
