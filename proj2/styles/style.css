@@ -1,8 +1,8 @@
-html {
+html{
     scroll-behavior: smooth;
 }
 
-body {
+body{
     font-family: Inter, Arial, Helvetica;
     color: #F2F3F4;
     /* 2E323A */
@@ -11,12 +11,12 @@ body {
     font-size: 20px;
 }
 
-h2 {
+h2{
     font-family: Kanit, Inter, Arial;
     font-size: 32;
 }
 
-h3 {
+h3{
     font-family: Kanit, Inter, Arial;
     font-size: 28px;
 }
@@ -25,13 +25,13 @@ h3 {
 /******************** HEADER **************************/
 /******************************************************/
 
-header {
+header{
     margin: auto;
     text-align: center;
 }
 
 
-header ul {
+header ul{
     padding: 0px;
     margin: auto;
     width: 60%;
@@ -39,15 +39,15 @@ header ul {
     display: flex;
 }
 
-header nav {
+header nav{
     background-color: #393D47;
 }
 
-header #navPic {
+header #navPic{
     width: 38px;
 }
 
-header li {
+header li{
     transition: all 0.3s ease;
     flex-grow: 1;
     font-size: 28px;
@@ -55,19 +55,19 @@ header li {
     /* padding-left: 20px; */
 }
 
-header li:hover {
+header li:hover{
     transition: all 0.3s ease;
     color: #24C5C4;
 }
 
-header a {
+header a{
     text-decoration: none;
     color: inherit;
 }
 
 /* HEADERDIV */
 
-#headerDiv {
+#headerDiv{
     transition: all 0.3s ease;
     margin: auto;
     margin-top: 60px;
@@ -76,29 +76,29 @@ header a {
     border-radius: 10px;
 }
 
-#headerDiv:hover {
+#headerDiv:hover{
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
 }
 
-#headerDiv span {
+#headerDiv span{
     transition: all 0.3s ease;
 }
 
-#headerDiv:hover span {
+#headerDiv:hover span{
     transition: all 0.3s ease;
     color: #F0C808;
 }
 /* F0C808 #6A7FDB*/
-#headerDiv h1 {
+#headerDiv h1{
     font-family: Kanit, Inter, Arial;
     font-size: 56px;
     margin-top: 100px;
     margin-bottom: 0px;
 }
 
-#profilePic {
+#profilePic{
     margin-top: 70px;
     margin-bottom: 150px;
     width: 30%;
@@ -111,7 +111,7 @@ header a {
 /*********************** GENERAL INFO ************************/
 /*************************************************************/
 
-#GeneralInfo {
+#GeneralInfo{
     transition: all 0.3s ease;
     margin: 100px 0px;
     padding: 100px 0px;
@@ -119,22 +119,22 @@ header a {
 }
 
 
-#GeneralInfo:hover {
+#GeneralInfo:hover{
     background-color: #1DA1A0;
 }
 /* 7B94FF */
 
-#GeneralInfo div {
+#GeneralInfo div{
     margin: auto;
     width: 60%;
     text-align: center;
 }
 
-span {
+span{
     transition: all 0.3s ease;
 }
 
-#GeneralInfo:hover span {
+#GeneralInfo:hover span{
     transition: all 0.3s ease;
     color: #F0C808;
 }
@@ -143,39 +143,39 @@ span {
 /*********************** ABOUT ************************/
 /******************************************************/
 
-#container {
+#container{
     width: 60%;
     margin: auto;
     text-align: center;
 }
 
-.ImageDiv {
+.ImageDiv{
     height: 100px;
 }
 
 /* TOHLE JE TEMPORARY, ASI MUSIM ZMENIT IKONKY, NEVYPADA TO DOBRE */
-#About img {
+#About img{
     width: 100px;
 }
 
-#About h2 {
+#About h2{
     transition: all 0.3s ease;
     margin-bottom: 65px;
 }
 
-#About:hover h2 {
+#About:hover h2{
     transition: all 0.3s ease;
     color: #F0C808;
     font-size: 38px;
 }
 
-#MyHistory {
+#MyHistory{
     display: flex;
     gap: 10%;
     padding-bottom: 70px;
 }
 
-.School {
+.School{
     transition: all 0.3s ease;
     box-sizing: border-box;
     border: 2px solid #313338;
@@ -183,62 +183,62 @@ span {
     border-radius: 10px;
 }
 
-.School p {
+.School p{
     padding: 30px;
 }
 
-.School:hover {
+.School:hover{
     /* box-sizing: border-box; */
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
 }
 
-h3 {
+h3{
     font-family: Kanit, Inter, Arial;
     font-size: 28px;
 }
 
-.School h3 {
+.School h3{
     margin-bottom: 0;
     transition: all 0.3s ease;
 }
 
-.School:hover h3 {
+.School:hover h3{
     transition: all 0.3s ease;
     color: #F0C808;
     font-size: 32px;
 }
 
-.School:hover span {
+.School:hover span{
     transition: all 0.3s ease;
     color: #F0C808;
 }
 
-#Hobbies {
+#Hobbies{
     transition: all 0.3s ease;
     border: 2px solid #313338;
     padding-bottom: 20px;
     border-radius: 10px;
 }
 
-#Hobbies:hover {
+#Hobbies:hover{
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
 }
 
-#Hobbies h3 {
+#Hobbies h3{
     transition: all 0.3s ease;
 }
 
-#Hobbies:hover h3 {
+#Hobbies:hover h3{
     transition: all 0.3s ease;
     color: #F0C808;
     font-size: 32px;
 }
 
-#Hobbies p {
+#Hobbies p{
     padding: 0px 40px 40px 40px;
     margin: 0px;
 }
@@ -247,7 +247,7 @@ h3 {
 /*********************** WORK ************************/
 /*****************************************************/
 
-#Work {
+#Work{
     transition: all 0.3s ease;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -256,18 +256,18 @@ h3 {
     border-radius: 10px;
 }
 
-#Work:hover {
+#Work:hover{
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
 }
 
-#Work h2 {
+#Work h2{
     display: inline-block;
     position: relative;
 }
 
-#Work h2::after {
+#Work h2::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -280,28 +280,29 @@ h3 {
     transition: transform 0.3s ease-out;
 }
 
-#Work:hover h2::after {
+#Work:hover h2::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-#Work p {
+#Work p{
     transition: all 0.3s ease;
     padding: 0px 30px;
 }
 
-#Work:hover span {
+#Work:hover span{
     transition: all 0.3s ease;
     color: #F0C808;
 }
 
-#Work a {
+#Work a{
     transition: all 0.3s ease;
+    padding: 2px 5px;
     text-decoration: none;
     color: inherit;
 }
 
-#Work:hover a {
+#Work:hover a{
     transition: all 0.3s ease;
     padding: 2px 5px;
     border-radius: 5px;
@@ -314,69 +315,72 @@ h3 {
 /*********************** CONTACT ************************/
 /********************************************************/
 
-#Contact {
+#Contact{
     transition: all 0.3s ease;
     padding-top: 10px;
     border: 2px solid #313338;
     border-radius: 10px;
 }
 
-#Contact:hover {
+#Contact:hover{
     border: 2px solid #24C5C4;
     background-color: #393D47;
 }
 
-#Contact h2 {
+#Contact h2{
     margin-bottom: 40px;
 }
 
-#Contact:hover h2, #Contact:hover span {
+#Contact:hover h2, #Contact:hover span{
     transition: all 0.3s ease;
     color: #F0C808;
 }
 
-#Contact a {
+#Contact a{
     transition: all 0.2s ease;
     text-decoration: none;
     color: inherit;
 }
 
-#Contact:hover #link {
-    transition: all 0.3s ease;
+#Contact #link{
     padding: 2px 5px;
+}
+
+#Contact:hover #link{
+    transition: all 0.3s ease;
     border-radius: 5px;
     background-color: #1DA1A0;
 }
 
-#Contact p {
+#Contact p{
     padding: 30px;
 }
 
-#Contact #Download {
+#Contact #Download{
     padding: 10px;
     background-color: #1DA1A0;
     border-radius: 7px;
 }
 
-#Contact #Download:hover {
+#Contact #Download:hover{
     transition: all 0.2s ease;
     background-color: #167A7A;
 }
 
-#ContactIcons {
+#ContactIcons{
     padding-bottom: 40px;
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-#ContactIcons img {
+#ContactIcons img{
     transition: all 0.1s ease;
     max-width: 70px;
     min-width: 60px;
 }
 
-#ContactIcons img:hover {
+#ContactIcons img:hover{
     transition: all 0.15s ease;
     filter: invert(1);
 }
@@ -385,26 +389,26 @@ h3 {
 /*********************** FOOTER ************************/
 /********************************************************/
 
-footer {
+footer{
     margin-top: 60px;
     transition: all 0.3s ease;
     background-color: #393D47;
     text-align: center;
 }
 
-footer img {
+footer img{
     transition: all 0.2s ease;
     padding-top: 60px;
     padding-bottom: 30px;
     width: 100px;
 }
 
-footer img:hover {
+footer img:hover{
     transition: all 0.2s ease;
     width: 115px;
 }
 
-footer p {
+footer p{
     margin-bottom: 0px;
     margin-top: 5px;
     padding-bottom: 0px;
@@ -415,12 +419,41 @@ footer p:last-child{
     padding-bottom: 30px;
 }
 
-footer a {
+footer a{
     text-decoration: none;
     color: inherit;
 }
 
-footer:hover span {
+footer:hover span{
     transition: all 0.3s ease;
     color: #F0C808;
+}
+
+/* S TIMHLE SI PAK MUZU ZKUSIT POHRAT */
+@media(max-width: 1366px){
+    header ul{
+        width: 80%;
+    }
+
+    #headerDiv{
+        width: 80%;
+    }
+
+    #GeneralInfo div{
+        width: 80%;
+    }
+
+    #container{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #MyHistory{
+        display: block;
+    }
+
+    .School:first-child{
+        margin-bottom: 40px;
+    }
 }
