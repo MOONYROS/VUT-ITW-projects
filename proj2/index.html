@@ -14,15 +14,27 @@
 </head>
 <body>
     <header id="head">
-        <nav>
-            <ul>
-                <li><a href="index.html"><img src="images/MOONY_500x500.png" alt="Main logo" id="navPic"></a></li>
-                <!-- <li><a href="index.html">Start</a></li> -->
-                <li><a href="#About">About</a></li>
-                <li><a href="#Work">Work</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
+        <!-- TADY ZACNE RESPONSIVE MENU -->
+        <div class="navContainer">
+            <div class="subContainer">
+                <nav class="navbar">
+                    <!-- <img src="images/MOONY_500x500.png" alt="Main logo" id="navPic"> -->
+                    <a href="index.html" class="navBranding"><img src="images/MOONY_500x500.png" alt="Main logo" id="navPic"></a>
+                    <ul class="navMenu">
+                        <li class="navItem"><a href="#head" class="navLink">Home</a></li>
+                        <li class="navItem"><a href="#About" class="navLink">About</a></li>
+                        <li class="navItem"><a href="#Work" class="navLink">Work</a></li>
+                        <li class="navItem"><a href="#Contact" class="navLink">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- TADY SKONCI RESPONSIVE MENU -->
         <div id="headerDiv">
             <h1><span>Hello</span>, stranger!</h1>
             <p>I'm a beginning programmer and IT student.</p>
@@ -125,5 +137,7 @@
         <p class="FooterPar">Web version: 0.2</p>
         <p class="FooterPar">Some icons were <a href="http://www.freepik.com">Designed by Freepik</a>.</p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
