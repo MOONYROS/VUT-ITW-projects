@@ -37,6 +37,7 @@ header{
 
     width: 1600px;
     margin: auto;
+    z-index: 1;
 }
 
 .subContainer{
