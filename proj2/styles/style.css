@@ -35,8 +35,6 @@ header{
     top: 0px;
     width: 100%;
     background-color: #393D47;
-
-    /* width: 1600px; */
     margin: auto;
     z-index: 1;
 }
@@ -98,46 +96,12 @@ header a{
     text-decoration: none;
 }
 
-/* header ul{
-    padding: 0px;
-    margin: auto;
-    width: 60%;
-    list-style: none;
-    display: flex;
-}
-
-header nav{
-    background-color: #393D47;
-}
-
-header #navPic{
-    width: 38px;
-}
-
-header li{
-    transition: all 0.3s ease;
-    flex-grow: 1;
-    font-size: 28px;
-    padding: 10px;
-}
-
-header li:hover{
-    transition: all 0.3s ease;
-    color: #24C5C4;
-}
-
-header a{
-    text-decoration: none;
-    color: inherit;
-} */
-
 /* HEADERDIV */
 
 #headerDiv{
     transition: all 0.3s ease;
     margin: auto;
-    /* margin-top: 60px; */
-    margin-top: 120px; /* TODO zkontrolovat */
+    margin-top: 120px;
     width: 60%;
     border: 2px solid grey;
     border-radius: 10px;
@@ -157,7 +121,7 @@ header a{
     transition: all 0.3s ease;
     color: #F0C808;
 }
-/* F0C808 #6A7FDB*/
+
 #headerDiv h1{
     font-family: Kanit, Inter, Arial;
     font-size: 56px;
@@ -188,7 +152,6 @@ header a{
 #GeneralInfo:hover{
     background-color: #1DA1A0;
 }
-/* 7B94FF */
 
 #GeneralInfo div{
     margin: auto;
@@ -254,7 +217,6 @@ span{
 }
 
 .School:hover{
-    /* box-sizing: border-box; */
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
@@ -495,9 +457,7 @@ footer:hover span{
     color: #F0C808;
 }
 
-/* S TIMHLE SI PAK MUZU ZKUSIT POHRAT */
 @media(max-width: 1366px){
-    /* ODSUD ZKOPIROVANO */
     .hamburger{
         display: block;
     }
@@ -539,7 +499,6 @@ footer:hover span{
     .subContainer{
         width: 80%;
     }
-    /* PO SEM ZKOPIROVANO */
 
     #headerDiv{
         width: 80%;
