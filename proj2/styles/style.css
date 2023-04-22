@@ -107,7 +107,7 @@ header a{
     border-radius: 10px;
 }
 
-#headerDiv:hover{
+#headerDiv:hover{/**/
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
@@ -117,7 +117,7 @@ header a{
     transition: all 0.3s ease;
 }
 
-#headerDiv:hover span{
+#headerDiv:hover span{/**/
     transition: all 0.3s ease;
     color: #F0C808;
 }
@@ -149,7 +149,7 @@ header a{
     background-color: #24C5C4;
 }
 
-#GeneralInfo:hover{
+#GeneralInfo:hover{/**/
     background-color: #1DA1A0;
 }
 
@@ -163,7 +163,7 @@ span{
     transition: all 0.3s ease;
 }
 
-#GeneralInfo:hover span{
+#GeneralInfo:hover span{/**/
     transition: all 0.3s ease;
     color: #F0C808;
 }
@@ -192,7 +192,7 @@ span{
     margin-bottom: 65px;
 }
 
-#About:hover h2{
+#About:hover h2{/**/
     transition: all 0.3s ease;
     color: #F0C808;
     font-size: 38px;
@@ -216,7 +216,7 @@ span{
     padding: 30px;
 }
 
-.School:hover{
+.School:hover{/**/
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
@@ -232,13 +232,13 @@ h3{
     transition: all 0.3s ease;
 }
 
-.School:hover h3{
+.School:hover h3{/**/
     transition: all 0.3s ease;
     color: #F0C808;
     font-size: 32px;
 }
 
-.School:hover span{
+.School:hover span{/**/
     transition: all 0.3s ease;
     color: #F0C808;
 }
@@ -250,7 +250,7 @@ h3{
     border-radius: 10px;
 }
 
-#Hobbies:hover{
+#Hobbies:hover{/**/
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
@@ -260,7 +260,7 @@ h3{
     transition: all 0.3s ease;
 }
 
-#Hobbies:hover h3{
+#Hobbies:hover h3{/**/
     transition: all 0.3s ease;
     color: #F0C808;
     font-size: 32px;
@@ -284,7 +284,7 @@ h3{
     border-radius: 10px;
 }
 
-#Work:hover{
+#Work:hover{/**/
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
@@ -308,7 +308,7 @@ h3{
     transition: transform 0.3s ease-out;
 }
 
-#Work:hover h2::after{
+#Work:hover h2::after{/**/
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -318,7 +318,7 @@ h3{
     padding: 0px 30px;
 }
 
-#Work:hover span{
+#Work:hover span{/**/
     transition: all 0.3s ease;
     color: #F0C808;
 }
@@ -330,7 +330,7 @@ h3{
     color: inherit;
 }
 
-#Work:hover a{
+#Work:hover a{/**/
     transition: all 0.3s ease;
     padding: 2px 5px;
     border-radius: 5px;
@@ -350,7 +350,7 @@ h3{
     border-radius: 10px;
 }
 
-#Contact:hover{
+#Contact:hover{/**/
     border: 2px solid #24C5C4;
     background-color: #393D47;
 }
@@ -359,7 +359,7 @@ h3{
     margin-bottom: 40px;
 }
 
-#Contact:hover h2, #Contact:hover span{
+#Contact:hover h2, #Contact:hover span{/**/
     transition: all 0.3s ease;
     color: #F0C808;
 }
@@ -374,7 +374,7 @@ h3{
     padding: 2px 5px;
 }
 
-#Contact:hover #link{
+#Contact:hover #link{ /**/
     transition: all 0.3s ease;
     border-radius: 5px;
     background-color: #1DA1A0;
@@ -548,5 +548,99 @@ footer:hover span{
 
     .School:first-child{
         margin-bottom: 40px;
+    }
+
+    /*******************/
+    /* ACTIVE ELEMENTY */
+    /*******************/
+    #headerDiv.active,
+    .School.active,
+    #Hobbies.active,
+    #Work.active{
+        transition: all 0.3s ease;
+        border: 2px solid #24C5C4;
+        background-color: #393D47;
+    }
+
+    #headerDiv.active span{
+        transition: all 0.3s ease;
+        color: #F0C808;
+    }
+
+    #GeneralInfo.active{
+        background-color: #1DA1A0;
+    }
+
+    #GeneralInfo.active span{
+        transition: all 0.3s ease;
+        color: #F0C808;
+    }
+
+    /* ABOUT */
+    #About.active h2{
+        transition: all 0.3s ease;
+        color: #F0C808;
+        font-size: 38px;
+    }
+
+    /* SCHOOL */
+    .School.active h3{
+        transition: all 0.3s ease;
+        color: #F0C808;
+        font-size: 32px;
+    }
+    
+    .School.active span{
+        transition: all 0.3s ease;
+        color: #F0C808;
+    }
+
+    /* HOBBIES */
+    #Hobbies.active h3{
+        transition: all 0.3s ease;
+        color: #F0C808;
+        font-size: 32px;
+    }
+
+    /* WORK */
+    #Work.active span{
+        transition: all 0.3s ease;
+        color: #F0C808;
+    }
+
+    #Work.active a{
+        transition: all 0.3s ease;
+        padding: 2px 5px;
+        border-radius: 5px;
+        background-color: #1DA1A0;
+    }
+
+    /* CONTACT */
+    /* TODO ZKUSIT VYRESIT TO PODTRZENI */
+    #Contact.active{
+        border: 2px solid #24C5C4;
+        background-color: #393D47;
+    }
+
+    #Contact.active h2, #Contact.active span{/**/
+        transition: all 0.3s ease;
+        color: #F0C808;
+    }
+
+    #Contact.active #link{
+        transition: all 0.3s ease;
+        border-radius: 5px;
+        background-color: #1DA1A0;
+    }
+
+    /* FOOTER */
+    footer img.active{
+        transition: all 0.2s ease;
+        width: 115px;
+    }
+
+    footer.active span{
+        transition: all 0.3s ease;
+        color: #F0C808;
     }
 }
