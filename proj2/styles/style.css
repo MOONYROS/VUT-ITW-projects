@@ -13,7 +13,7 @@ body{
 
 h2{
     font-family: Kanit, Inter, Arial;
-    font-size: 32;
+    font-size: 32px;
 }
 
 h3{
@@ -445,6 +445,34 @@ footer:hover span{
 
     #container{
         width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #MyHistory{
+        display: block;
+    }
+
+    .School:first-child{
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 720px){
+    header ul{
+        width: 95%;
+    }
+
+    #headerDiv{
+        width: 95%;
+    }
+
+    #GeneralInfo div{
+        width: 95%;
+    }
+
+    #container{
+        width: 95%;
         margin: auto;
         text-align: center;
     }
