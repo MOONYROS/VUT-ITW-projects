@@ -176,8 +176,9 @@ span {
 }
 
 .School {
-    box-sizing: border-box;
     transition: all 0.3s ease;
+    box-sizing: border-box;
+    border: 2px solid #313338;
     padding: 10px;
     border-radius: 10px;
 }
@@ -216,6 +217,7 @@ h3 {
 
 #Hobbies {
     transition: all 0.3s ease;
+    border: 2px solid #313338;
     padding-bottom: 20px;
     border-radius: 10px;
 }
@@ -250,6 +252,7 @@ h3 {
     margin-top: 60px;
     margin-bottom: 60px;
     padding-bottom: 20px;
+    border: 2px solid #313338;
     border-radius: 10px;
 }
 
@@ -314,6 +317,7 @@ h3 {
 #Contact {
     transition: all 0.3s ease;
     padding-top: 10px;
+    border: 2px solid #313338;
     border-radius: 10px;
 }
 
@@ -402,7 +406,18 @@ footer img:hover {
 
 footer p {
     margin-bottom: 0px;
-    padding-bottom: 40px;
+    margin-top: 5px;
+    padding-bottom: 0px;
+}
+
+footer p:last-child{
+    font-size: 10px;
+    padding-bottom: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
 }
 
 footer:hover span {
