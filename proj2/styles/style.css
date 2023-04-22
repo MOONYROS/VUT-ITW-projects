@@ -8,6 +8,7 @@ body{
     background-color: #313338; 
     margin: 0px;
     font-size: 20px;
+    scroll-padding: 50px 50px;
 }
 
 h2{
@@ -32,16 +33,16 @@ header{
 .navContainer{
     position: fixed;
     top: 0px;
-    /* width: 100%; */
+    width: 100%;
     background-color: #393D47;
 
-    width: 1600px;
+    /* width: 1600px; */
     margin: auto;
     z-index: 1;
 }
 
 .subContainer{
-    width: 85%;
+    width: 60%;
     margin: auto;
 }
 
@@ -80,52 +81,6 @@ header{
 
 #headerDiv{
     margin-top: 70px;
-}
-
-@media(max-width: 1600px){
-    .navContainer{
-        width: 100%;
-    }
-}
-
-@media(max-width: 1024px){
-    .hamburger{
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .navMenu{
-        margin: 0px;
-        position: fixed;
-        left: -400%;
-        top: 70px;
-        gap: 0px;
-        padding-left: 0px;
-        flex-direction: column;
-        background-color: #393D47;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .navItem{
-        margin: 16px;
-    }
-
-    .navMenu.active{
-        left: 0px;
-    }
 }
 
 header li{
@@ -542,9 +497,49 @@ footer:hover span{
 
 /* S TIMHLE SI PAK MUZU ZKUSIT POHRAT */
 @media(max-width: 1366px){
-    header ul{
+    /* ODSUD ZKOPIROVANO */
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu{
+        margin: 0px;
+        position: fixed;
+        left: -400%;
+        top: 70px;
+        gap: 0px;
+        padding-left: 0px;
+        flex-direction: column;
+        background-color: #393D47;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navItem{
+        margin: 16px;
+    }
+
+    .navMenu.active{
+        left: 0px;
+    }
+
+    .subContainer{
         width: 80%;
     }
+    /* PO SEM ZKOPIROVANO */
 
     #headerDiv{
         width: 80%;
@@ -569,21 +564,21 @@ footer:hover span{
     }
 }
 
-@media(max-width: 720px){
-    header ul{
-        width: 95%;
+@media(max-width: 768px){
+    .subContainer{
+        width: 90%;
     }
 
     #headerDiv{
-        width: 95%;
+        width: 90%;
     }
 
     #GeneralInfo div{
-        width: 95%;
+        width: 90%;
     }
 
     #container{
-        width: 95%;
+        width: 90%;
         margin: auto;
         text-align: center;
     }
