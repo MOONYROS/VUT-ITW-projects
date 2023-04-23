@@ -1,10 +1,9 @@
 // KOD PRO SCROOL PROGRESS BAR
 const scrollProgress = document.getElementById('scrollProgress');
-const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
 
 window.addEventListener('scroll', () => {
     const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-    const width = Math.min((scrollTop / height) * 100, 100); // Limit the width to a maximum of 100%
+    const width = Math.min((scrollTop / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100, 100); // Limit the width to a maximum of 100%
     scrollProgress.style.width = `${width}%`;
 });
 

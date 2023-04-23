@@ -24,7 +24,7 @@ h3{
 /*********************************************************/
 /******************** SCROLL PROGRESS ********************/
 /*********************************************************/
-#scrollProgress {
+#scrollProgress{
     position: fixed;
     top: 0px;
     width: 0%;
@@ -350,7 +350,45 @@ h3{
     background-color: #1DA1A0;
 }
 
-/* TODO TADY BUDE IMAGE CAROUSEL (snad) */
+/* PROJEKTY */
+#Work h3{
+    padding-top: 40px;
+}
+
+#projects{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-areas:
+        "a b"
+        "c d"
+        "e f";
+    grid-gap: 20px;
+    place-items: center;
+}
+  
+/* NASTAVENI GRIDU */
+#a{grid-area: a;}
+#b{grid-area: b;}
+#c{grid-area: c;}
+#d{grid-area: d;}
+#e{grid-area: e;}
+#f{grid-area: f;}
+
+#projects img{
+    transition: all 0.3s ease;
+    width: 60%;
+    margin: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects img:hover{
+    transition: all 0.3s ease;
+    width: 70%;
+}
 
 /********************************************************/
 /*********************** CONTACT ************************/
@@ -584,6 +622,20 @@ footer:hover span{
 
     .School h3{
         padding-top: 30px;
+    }
+
+    #projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #projects > :nth-child(n+4) {
+        display: none;
+    }
+
+    #projects img:hover{
+        width: 60%;
     }
 
     #Contact > h2{
