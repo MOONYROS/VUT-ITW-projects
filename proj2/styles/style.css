@@ -1,3 +1,6 @@
+/* CREATED BY: Ondrej Lukasek (xlukas15) */
+
+/* BASIC SETUP */
 html{
     scroll-behavior: smooth;
 }
@@ -42,6 +45,7 @@ header{
     text-align: center;
 }
 
+/* Starting with fixed navigation */
 .navContainer{
     position: fixed;
     top: 0px;
@@ -75,22 +79,20 @@ header{
     gap: 60px;
 }
 
+/* Element for hamburger menu (used in script) */
 .hamburger{
     display: none;
     cursor: pointer;
 }
 
+/* progress bar (also in script) */
 .bar{
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px 0;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     background-color: #24C5C4;
-}
-
-#headerDiv{
-    margin-top: 70px;
 }
 
 header li{
@@ -110,6 +112,7 @@ header a{
 
 /* HEADERDIV */
 
+/* Setting header with margin for menubar */
 #headerDiv{
     transition: all 0.3s ease;
     margin: auto;
@@ -119,16 +122,20 @@ header a{
     border-radius: 10px;
 }
 
+/* Hover animation to create a border and color background */
+/* This will be similar to many sections */
 #headerDiv:hover{
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
 }
 
+/* Span elements are for emphasis on some words */
 #headerDiv span{
     transition: all 0.3s ease;
 }
 
+/* When you hover on the section/div spans get yellow */
 #headerDiv:hover span{
     transition: all 0.3s ease;
     color: #F0C808;
@@ -154,6 +161,7 @@ header a{
 /*********************** GENERAL INFO ************************/
 /*************************************************************/
 
+/* Setting general info section to be a simple, bright tealish stripe */
 #GeneralInfo{
     transition: all 0.3s ease;
     margin: 100px 0px;
@@ -161,6 +169,7 @@ header a{
     background-color: #24C5C4;
 }
 
+/* and it will get darker when hovering over it */
 #GeneralInfo:hover{
     background-color: #1DA1A0;
 }
@@ -171,6 +180,7 @@ header a{
     text-align: center;
 }
 
+/* Spans work as said before (just emphasis on chosen words) */
 span{
     transition: all 0.3s ease;
 }
@@ -184,12 +194,14 @@ span{
 /*********************** ABOUT ************************/
 /******************************************************/
 
+/* container will be used later (setting up) */
 #container{
     width: 60%;
     margin: auto;
     text-align: center;
 }
 
+/* Setting school images to display properly */
 .ImageDiv{
     height: 100px;
 }
@@ -216,6 +228,9 @@ span{
     padding-bottom: 70px;
 }
 
+/* border has to be made before hover */
+/* because it can cause text to wrap and that does not look good */
+/* This will be basically the same for other elements with similar function */
 .School{
     transition: all 0.3s ease;
     box-sizing: border-box;
@@ -224,16 +239,19 @@ span{
     border-radius: 10px;
 }
 
+/* paragraps cant be too close to border */
 .School p{
     padding: 30px;
 }
 
+/* Similar as in header */
 .School:hover{
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
 }
 
+/* heading style */
 h3{
     font-family: Kanit, Inter, Arial;
     font-size: 28px;
@@ -245,6 +263,7 @@ h3{
     transition: all 0.3s ease;
 }
 
+/* heading will turn yellow when hovering over School */
 .School:hover h3{
     transition: all 0.3s ease;
     color: #F0C808;
@@ -288,6 +307,7 @@ h3{
 /*********************** WORK ************************/
 /*****************************************************/
 
+/* setting up work section */
 #Work{
     transition: all 0.3s ease;
     margin-top: 60px;
@@ -297,17 +317,21 @@ h3{
     border-radius: 10px;
 }
 
+/* similar as with other elements */
 #Work:hover{
     transition: all 0.3s ease;
     border: 2px solid #24C5C4;
     background-color: #393D47;
 }
 
+/* Setting up for different hover style */
+/* The text will get gradually underlined when hovering over section */
 #Work h2{
     display: inline-block;
     position: relative;
 }
 
+/* Underlining the heading (preparation) */
 #Work h2::after{
     content: '';
     position: absolute;
@@ -321,11 +345,13 @@ h3{
     transition: transform 0.3s ease-out;
 }
 
+/* Underlining heading on hover */
 #Work:hover h2::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
+/* paragraph cant get too close to border */
 #Work p{
     transition: all 0.3s ease;
     padding: 0px 30px;
@@ -343,6 +369,7 @@ h3{
     color: inherit;
 }
 
+/* Links will be in blue background when hovering over their section */
 #Work:hover a{
     transition: all 0.3s ease;
     padding: 2px 5px;
@@ -350,11 +377,13 @@ h3{
     background-color: #1DA1A0;
 }
 
-/* PROJEKTY */
+/* PROJECTS */
+/* The projects are only for imitation purposes */
 #Work h3{
     padding-top: 40px;
 }
 
+/* Setting up grid where the project cards will be */
 #projects{
     padding-top: 20px;
     padding-bottom: 30px;
@@ -367,7 +396,7 @@ h3{
     place-items: center;
 }
   
-/* NASTAVENI GRIDU */
+/* Grid elements setup */
 #a{grid-area: a;}
 #b{grid-area: b;}
 #c{grid-area: c;}
@@ -375,6 +404,7 @@ h3{
 #e{grid-area: e;}
 #f{grid-area: f;}
 
+/* Setting image sizes */
 #projects img{
     transition: all 0.3s ease;
     width: 60%;
@@ -385,6 +415,7 @@ h3{
     justify-content: center;
 }
 
+/* When hovering over images, they will get a little bit bigger */
 #projects img:hover{
     transition: all 0.3s ease;
     width: 70%;
@@ -394,6 +425,7 @@ h3{
 /*********************** CONTACT ************************/
 /********************************************************/
 
+/* Setup of Contact section */
 #Contact{
     transition: all 0.3s ease;
     padding-top: 10px;
@@ -425,6 +457,7 @@ h3{
     padding: 2px 5px;
 }
 
+/* Setup of link the same way as before */
 #Contact:hover #link{ 
     transition: all 0.3s ease;
     border-radius: 5px;
@@ -435,12 +468,14 @@ h3{
     padding: 30px;
 }
 
+/* item to download resume */
 #Contact #Download{
     padding: 10px;
     background-color: #1DA1A0;
     border-radius: 7px;
 }
 
+/* When you hover over it, the button gets darker */
 #Contact #Download:hover{
     transition: all 0.2s ease;
     background-color: #167A7A;
@@ -453,11 +488,14 @@ h3{
     gap: 20px;
 }
 
+/* Setup social network links */
 #ContactIcons img{
     transition: all 0.1s ease;
     width: 60px;
 }
 
+/* When you hover over them, they will invert in color */
+/* That is why I chose black and white */
 #ContactIcons img:hover{
     transition: all 0.15s ease;
     filter: invert(1);
@@ -467,6 +505,7 @@ h3{
 /*********************** FOOTER ************************/
 /********************************************************/
 
+/* footer setup */
 footer{
     margin-top: 60px;
     transition: all 0.3s ease;
@@ -474,6 +513,7 @@ footer{
     text-align: center;
 }
 
+/* image that will get user to the top when clicking it */
 footer img{
     transition: all 0.2s ease;
     padding-top: 60px;
@@ -497,25 +537,36 @@ footer p:last-child{
     padding-bottom: 30px;
 }
 
+/* There is a link to a freepik.com that I have to add because I used their icons*/
+/* However I will make it small because I dont want to emphasize it that much */
 footer a{
     text-decoration: none;
     color: inherit;
 }
 
+/* Same as before (emphasize function) */
 footer:hover span{
     transition: all 0.3s ease;
     color: #F0C808;
 }
 
+/* First media query */
+/* Main point was to disable flex in school section */
+/* Later I thought it could show the hamburger menu */
+/* Width is mainly for laptops and tablets */
 @media(max-width: 1366px){
+    /* I disable scroll progress because it does not look that good on a small screen */
+    /* The web looks too cramped with it enabled */
     #scrollProgress{
         display: none;
     }
     
+    /* Enabling hamburger menu */
     .hamburger{
         display: block;
     }
 
+    /* making cross from original three bars for the menu */
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
@@ -528,6 +579,8 @@ footer:hover span{
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    /* Sliding menu when clicking on the three bars */
+    /* Sliding it away so it is not visible */
     .navMenu{
         margin: 0px;
         position: fixed;
@@ -546,10 +599,13 @@ footer:hover span{
         margin: 16px;
     }
 
+    /* when menu is activated, we slide the links to section to viewport */
     .navMenu.active{
         left: 0px;
     }
 
+    /* Setting some sections to be a little wider */
+    /* so there is more space for text*/
     .subContainer{
         width: 80%;
     }
@@ -568,6 +624,8 @@ footer:hover span{
         text-align: center;
     }
 
+    /* disabling flex because it would not look good */
+    /* It would have very narrow columns and the text would not be redable well */
     #MyHistory{
         display: block;
     }
@@ -577,15 +635,20 @@ footer:hover span{
     }
 }
 
+/* media query mainly for phones (small devices) */
 @media(max-width: 768px){
+    /* sections will take larger amount of screen so their text is readable */
     .subContainer{
         width: 90%;
     }
 
+    /* I dont want the logo and navbar icon to be too close to the device edge */
     .navbar .navBranding, .navbar .hamburger{
         padding: 0px 10px;
     }
 
+    /* setup of header so my whole photo is visible */
+    /* without change only a amll portion of photo would be visible */
     #headerDiv h1{
         margin-top: 40px;
     }
@@ -598,6 +661,7 @@ footer:hover span{
         margin-bottom: 40px;
     }
 
+    /* larger section again */
     #headerDiv{
         width: 90%;
     }
@@ -616,6 +680,7 @@ footer:hover span{
         display: block;
     }
 
+    /* setting bigger gaps between divs */
     .School:first-child{
         margin-bottom: 40px;
     }
@@ -630,14 +695,18 @@ footer:hover span{
         justify-content: center;
     }
 
+    /* showing only 3 projects (all 6 is too many => does not look good) */
     #projects > :nth-child(-n+3){
         display: none;
     }
 
+    /* showing bigger project cards so the can be read well */
     #projects img{
         width: 70%;
     }
 
+    /* I dont want the hover to increase the size of image */
+    /* The page is very twitchy when resizing objects */
     #projects img:hover{
         width: 70%;
     }
@@ -655,8 +724,17 @@ footer:hover span{
     }
 
     /*******************/
-    /* ACTIVE ELEMENTY */
+    /* ACTIVE ELEMENTS */
     /*******************/
+
+    /* Almost all the elements that had hover in them before now have to be activated differently */
+    /* In the script.js you can see that when any of the elements specified in the script get in the viewport by 40% */
+    /* they will get activated and work similarly to hover. */
+    /* I have done this because there is no hover on mobile devices and this is a very nice substitution */
+    /* So basically, when 40% of .active element gets in the viewport, it will get activated */
+    /* All of the elements, that I want to get activatedare below with their style */
+    /* NOTE THAT THERE IS NO FONT SIZE CHANGE */
+    /* That is because (as said above) when resizing elements on mobile screen, the web can get twitchi, which looks bad. */
     #headerDiv.active,
     .School.active,
     #Hobbies.active,

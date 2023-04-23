@@ -1,4 +1,4 @@
-// KOD PRO SCROOL PROGRESS BAR
+// CODE FOR PROGRESS BAR
 const scrollProgress = document.getElementById('scrollProgress');
 
 window.addEventListener('scroll', () => {
@@ -7,34 +7,34 @@ window.addEventListener('scroll', () => {
     scrollProgress.style.width = `${width}%`;
 });
 
-// KOD PRO FIXNI MENU
+// CODE FOR FIXED MENU
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".navMenu");
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
+hamburger.addEventListener("click", () => { // when hamburger icon is clicked
+    hamburger.classList.toggle("active"); // we activate the menu
     navMenu.classList.toggle("active");
 })
 
 document.querySelectorAll(".navLink").forEach(n => n.
-    addEventListener("click", () => {
+    addEventListener("click", () => { // when we click it again, we remove it
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
     })
 )
 
-// KOD PRO VETSI SKOK PRI PRESOUVANI NA POLOZKY MENU
-const menuHeight = document.querySelector('.navContainer').offsetHeight + 40;
+// CODE FOR BETTER SCROLLING BETWEEN SECTIONS
+const menuHeight = document.querySelector('.navContainer').offsetHeight + 40; // set menu height
 
 document.querySelectorAll('.navContainer a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    anchor.addEventListener('click', function (e) { // for every link, we jump a little higher
         e.preventDefault();
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
         const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
         window.scrollTo({
             top: targetPosition - menuHeight,
-            behavior: 'smooth'
+            behavior: 'smooth' // smooth-scrolling
         });
     });
 });
@@ -57,7 +57,7 @@ document.querySelectorAll('footer a[href^="#"]').forEach(anchor => {
 const options = {
     root: null, // Use the document viewport as the container
     rootMargin: '0px', // No margin
-    threshold: 0.4, // The element is considered in viewport when 80% of it is visible
+    threshold: 0.4, // The element is considered in viewport when 40% of it is visible
 };
 
 // Create a new Intersection Observer

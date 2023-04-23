@@ -1,3 +1,5 @@
+<!-- CREATED BY: Ondrej Lukasek (xlukas15) -->
+<!-- HTML and CSS validation passed on 23.4.2023 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,17 +10,21 @@
     <link rel="icon" href="images/MOONY_500x500.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- IMPORTING FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> <!-- Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">  <!-- Kanit -->
+    <!-- SPECIFYING STYLESHEET -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <!-- DIV FOR SCROLL PROGRESS BAR -->
     <div id="scrollProgress"></div>
     <header id="head">
         <div class="navContainer">
             <div class="subContainer">
                 <nav class="navbar">
-                    <a href="http://www.stud.fit.vutbr.cz/~xlukas15/" class="navBranding"><img src="images/MOONY_500x500.png" alt="Main logo" id="navPic"></a>
+                    <!-- THIS ICON HAS A FIXED LINK TO MY WEB LOCATION -->
+                    <a href="http://www.stud.fit.vutbr.cz/~xlukas15/" class="navBranding"><img src="images/MOONY_500x500.png" alt="Main logo (blue moon)" id="navPic"></a>
                     <ul class="navMenu">
                         <li class="navItem"><a href="#head" class="navLink">Home</a></li>
                         <li class="navItem"><a href="#About" class="navLink">About</a></li>
@@ -52,6 +58,7 @@
     </section>
 
     <div id="container">
+        <!-- SECTION DIVIDED IN SUBSECTION(S) -->
         <section id="About">
             <h2>About me</h2>
             <div id="MyHistory">
@@ -111,7 +118,7 @@
                 where I'm gradually adding my projects that I've worked on either alone or in a team with others.
             </p>
             <!-- PROJEKTY -->
-            <!-- PROJEKTY BERTE PROSIM JAKO IMITACI, NE VAZNOU VEC -->
+            <!-- PROJECT ARE FOR IMITATION PURPOSES ONLY -->
             <h3>Projects I worked on</h3>
             <div id="projects">
                 <img src="images/card_compiler.png" alt="Compiler project card">
@@ -144,9 +151,11 @@
         <a href="#head"><img src="images/MOONY_500x500.png" alt="Main Logo"></a> <!-- ODKAZ NAHORU -->
         <p class="FooterPar">Copyright © 2023 <span>Ondřej&nbsp;Lukášek</span></p>
         <p class="FooterPar">Web version: 1.0</p>
+        <!-- SOURCE OF SOME ICONS -->
         <p class="FooterPar">Some icons were <a href="http://www.freepik.com">Designed by Freepik</a>.</p>
     </footer>
 
+    <!-- ADDING MY SCRIPT -->
     <script src="scripts/script.js"></script>
 </body>
 </html>
