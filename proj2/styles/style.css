@@ -630,8 +630,12 @@ footer:hover span{
         justify-content: center;
     }
 
-    #projects > :nth-child(n+4) {
+    #projects > :nth-child(-n+3){
         display: none;
+    }
+
+    #projects img{
+        width: 60%;
     }
 
     #projects img:hover{
@@ -719,7 +723,6 @@ footer:hover span{
     }
 
     /* CONTACT */
-    /* TODO ZKUSIT VYRESIT TO PODTRZENI */
     #Contact.active{
         border: 2px solid #24C5C4;
         background-color: #393D47;
