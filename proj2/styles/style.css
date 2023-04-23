@@ -338,7 +338,7 @@ h3{
     background-color: #1DA1A0;
 }
 
-/* TADY BUDE IMAGE CAROUSEL (snad) */
+/* TODO TADY BUDE IMAGE CAROUSEL (snad) */
 
 /********************************************************/
 /*********************** CONTACT ************************/
@@ -358,7 +358,6 @@ h3{
 
 #Contact h2{
     margin-bottom: 40px;
-    /* padding: 0px 20px; */
 }
 
 #Contact:hover h2, #Contact:hover span{
@@ -406,8 +405,6 @@ h3{
 
 #ContactIcons img{
     transition: all 0.1s ease;
-    /* max-width: 70px;
-    min-width: 60px; */
     width: 60px;
 }
 
@@ -622,7 +619,6 @@ footer:hover span{
     .School.active h3{
         transition: all 0.3s ease;
         color: #F0C808;
-        /* font-size: 32px; */
     }
     
     .School.active span{
@@ -634,14 +630,12 @@ footer:hover span{
     #Hobbies.active h3{
         transition: all 0.3s ease;
         color: #F0C808;
-        /* font-size: 32px; */
     }
 
     /* WORK */
     #Work.active h2{
         transition: all 0.3s ease;
         color: #F0C808;
-        /* font-size: 38px; */
     }
 
     #Work.active span{
@@ -677,7 +671,6 @@ footer:hover span{
     /* FOOTER */
     footer img.active{
         transition: all 0.2s ease;
-        /* width: 115px; */
     }
 
     footer.active span{
