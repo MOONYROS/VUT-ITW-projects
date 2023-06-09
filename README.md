@@ -1,4 +1,4 @@
-# ITW-projects (2022/2023)
+# VUT-ITW-projects (2022/2023)
 
 Goal of these 2 projects was to learn how to use `HTML` and `CSS` languages, to create modern webpages and to understand the basics about web development.
 This subject had **2 assignments** (projects):
